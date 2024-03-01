@@ -1,0 +1,101 @@
+/*CSS Page for EverStray Photo Collections*/
+/*Photography Website : Last updated 02/26/24*/
+
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: lightblue;
+}
+
+header {
+    color: black;
+    font-family: "Cinzel", cursive;
+    font-size: 20px;
+    text-align: center;
+    padding: 1rem 0;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/701/690/original/abstract-polygonal-banner-background-vector.jpg');
+    background-position: center 85%; /* Center the background image and chose display section*/
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+    color: white; /* Set text color to white */
+    text-shadow: -1px -1px 0 black,  
+                 1px -1px 0 black,
+                 -1px 1px 0 black,
+                 1px 1px 0 black; /* Add black shadow with offset */
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+main {
+    padding: 2rem;
+}
+
+h1 {
+	text-align: center;
+	padding: 2rem;
+	font-family: serif;
+}
+
+.animal-grid, .scenic-grid, .sports-grid{
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap to the next row */
+    gap: 10px; /* Gap between images */
+}
+
+.animal-grid p, .scenic-grid p, .sports-grid p {
+    text-align: center;
+    font-family: serif;
+}
+
+.image-item {
+    flex: 1 1 auto; /* Let each image item grow and shrink to fit its content */
+    max-width: calc(20% - 10px); /* Set maximum width for each image item */
+}
+
+.image-item img {
+    width: 100%; /* Ensure images take up full width of their container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set maximum height for images */
+    object-fit: cover; /* Scale images while preserving aspect ratio */
+}
+
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ensure footer spans the entire width */
+  background-color: black;
+  font-family: "Cinzel", cursive;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding: 0rem;
+  z-index: 3; /* Ensure footer is above other content */
+}

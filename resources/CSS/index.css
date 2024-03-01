@@ -1,0 +1,114 @@
+/*   Photography Website : Last updated 02/26/24  */
+
+/* Universal Styles */
+html {
+  font-size: 16px;
+  background-color: #d3e0d8;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Banner */
+#banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60rem;
+  padding: 0;
+  margin: 0;
+  background-image: url('../collection/Photos/Scenes/wolf.png');
+  background-position: center; /* Center the background image */
+  background-size: 100% 100%; /* Ensure the entire image is covered by the background */
+  box-sizing: border-box;
+  z-index: 0;
+}
+
+#banner h1 {
+  font-family: "Cinzel", cursive;
+  font-size: 4rem;
+  color: white;
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Navigation Menu */
+nav {
+  top: 90px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  left: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*Links*/
+.bio-content a:hover {
+  background-color: #91cafd;
+}
+
+.bio-content a {
+  color: blue;
+}
+
+video{
+  position: fixed;
+  top: 150px; /* Move down 20 pixels from the top */
+  right: 20px; /* Move to the right 20 pixels */
+  z-index: 1;
+}
+
+#home-vid p {
+  position: fixed;
+  top: 575px; /* Move down 20 pixels from the top */
+  right: 175px; /* Move from the right side X pixels */
+  z-index: 2;
+  color: white;
+  font-family: "Cinzel", cursive;
+  font-size: 2rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 25%; /* Ensure footer spans the entire width */
+  background-color: rgba(0, 0, 0, 0.15); /* Black with 15% opacity */
+  border-radius: 50%;
+  font-family: "Cinzel", cursive;
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  padding: 0rem;
+  z-index: 3; /* Ensure footer is above other content */
+}

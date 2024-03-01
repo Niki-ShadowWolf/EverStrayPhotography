@@ -1,0 +1,95 @@
+/*CSS Page for EverStray About*/
+/*Photography Website : Last updated 02/26/24*/
+
+
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    color: black;
+    font-family: "Cinzel", cursive;
+    font-size: 20px;
+    text-align: center;
+    padding: 1rem 0;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/701/690/original/abstract-polygonal-banner-background-vector.jpg');
+    background-position: center 60%; /* Center the background image and chose display section*/
+}
+
+h1 {
+    color: white;
+    font-family: "Charm", cursive;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #666;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    background-image: url('../../../collection/photos/Animals/insect1.jpg');
+    background-position: center; /* Center the background image */
+    background-size: 100% 100%; /* Ensure the entire image is covered by the background */
+    box-sizing: border-box;
+    z-index: 0;
+    margin-top: 0;
+    min-height: calc(100vh - 60px); /* Ensure main content area spans viewport height - nav bar height */
+}
+
+.bio {
+    margin-bottom: 20px;
+    font-family: "Shippori Mincho", serif;
+    font-size: 20px;
+}
+
+.bio p {
+    padding: 20px;
+    font-family: "Shippori Mincho", serif;
+}
+
+.contact {
+    font-family: serif;
+    font-size: 20px;
+    margin-right: 35%; /* Move the section 25% from the left */
+}
+
+.contact p {
+    margin-bottom: 10px; /* Add margin-bottom for spacing */
+}
+
+.contact .email, .contact a {
+    font-family: serif;
+    color: darkblue; /* Color for the email text */
+    display: inline; /* Display the email address on the same line */
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ensure footer spans the entire width */
+  background-color: black;
+  font-family: "Cinzel", cursive;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  z-index: 3; /* Ensure footer is above other content */
+}
